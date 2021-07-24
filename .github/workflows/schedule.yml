@@ -1,4 +1,4 @@
-name: Update gist
+tname: Update gist
 on:
   repository_dispatch:
     types: [build-event]
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Update gist
-        uses: maxam2017/productive-box@master
+        uses: rievant77/productive-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 3279a6ba02b14c30bfc94f6de3db1c10
